@@ -1,0 +1,24 @@
+.container {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: orange;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  left: 30%;
+}
+input {
+  margin: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  outline: 0;
+  border: 1px;
+}
+p {
+  position: absolute;
+  top: 85%;
+  left: 42%;
+  font-style: italic;
+}

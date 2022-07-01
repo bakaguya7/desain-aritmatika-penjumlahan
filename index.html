@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#onclick').click(getNumber);
+      });
+
+      function getNumber(){
+        var a = $('#nilaiA').val();
+        var b = $('#nilaiB').val();
+        var c = parseInt(a) + parseInt(b);
+        alert("Hasil : "+c);
+        $('#nilaiA, #nilaiB').val('');
+      }
+
+      function returnNum(num1, num2){
+        return num1 + num2;
+      }
+      console.log(returnNum(13, 2));
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <input type="number" id="nilaiA" placeholder="Masukkan nilai a"><br>
+      <input type="number" id="nilaiB" placeholder="Masukkan nilai b"><br>
+      <input type="button" value="HASIL" id="onclick">
+    </div>
+    <p>Created by Naufal Hanif</p>
+  </body>
+</html>
